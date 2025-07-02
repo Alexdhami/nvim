@@ -49,8 +49,9 @@ lazy/
 plugin/
 undodir/
 swap//
-session/```
-
+session/
+```
 ## License
 This configuration is shared for personal use and inspiration. Feel free to fork or modify it.
+
 ```This configuration is shared for personal use and inspiration. Feel free to fork or modify it.```
