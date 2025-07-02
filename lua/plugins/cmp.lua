@@ -16,7 +16,6 @@ cmp.setup({
     ["<CR>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.confirm({ select = true })             -- Confirm current suggestion
-        vim.api.nvim_feedkeys(" ", "n", false)     -- Add a space after confirming
       else
         fallback()
       end
