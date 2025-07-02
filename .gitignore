@@ -4,4 +4,5 @@ plugin/
 undodir/
 swap//
 session/
+lazy-lock.json
 
