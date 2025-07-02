@@ -4,14 +4,14 @@
 This is my personal Neovim configuration built using Lua and managed with [lazy.nvim](https://github.com/folke/lazy.nvim). It is modular, clean, and portable across machines.
 
 ## Folder Structure
-~/.config/nvim/
+```~/.config/nvim/
 ├── init.lua
 ├── lua/
 │ ├── core/ # Basic settings and keymaps
 │ ├── plugins/ # Plugin-specific configurations
 │ └── utils/ # Bootstrap and helper scripts
 ├── lazy/ # Auto-generated plugin manager directory (gitignored)
-
+```
 ## Features
 
 - Modular structure using Lua
@@ -37,7 +37,7 @@ This is my personal Neovim configuration built using Lua and managed with [lazy.
 ```nvim```
 On first launch, lazy.nvim will install itself and all listed plugins automatically.
 ## Notes
-The lazy/ directory is generated automatically and should not be committed.
+The```lazy/``` directory is generated automatically and should not be committed.
 
 The configuration uses vim.defer_fn to ensure the colorscheme loads only after plugins are available.
 
@@ -51,7 +51,10 @@ undodir/
 swap//
 session/
 ```
-## License
-This configuration is shared for personal use and inspiration. Feel free to fork or modify it.
 
-```This configuration is shared for personal use and inspiration. Feel free to fork or modify it.```
+## Author
+```
+**Your Name**  
+GitHub: [yourusername](https://github.com/yourusername)  
+Email: your.email@example.com
+```
