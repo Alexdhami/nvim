@@ -29,3 +29,4 @@ map("n", "<A-h>", "<C-w>h", opts)
 map("n", "<A-l>", "<C-w>l", opts)
 map("n", "<A-j>", "<C-w>j", opts)
 map("n", "<A-k>", "<C-w>k", opts)
+

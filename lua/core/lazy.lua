@@ -5,11 +5,10 @@ require("lazy").setup({
   -- File Explorer
   { "nvim-tree/nvim-tree.lua", dependencies = { "nvim-tree/nvim-web-devicons" } },
 
-  -- Fuzzy Finder
-  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
   -- LSP Support
   "neovim/nvim-lspconfig",
+{ "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
   { "williamboman/mason.nvim", build = ":MasonUpdate" },
   "williamboman/mason-lspconfig.nvim",
 
