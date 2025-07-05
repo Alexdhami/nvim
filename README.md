@@ -54,7 +54,6 @@ session/
 
 ## Author
 ```
-**Your Name**  
-GitHub: [yourusername](https://github.com/yourusername)  
-Email: your.email@example.com
+**Alex Dhami**  
+GitHub: [Alexdhami](https://github.com/Alexdhami)  
 ```
