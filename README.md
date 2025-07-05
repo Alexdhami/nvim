@@ -31,7 +31,7 @@ This is my personal Neovim configuration built using Lua and managed with [lazy.
    ```sh
    mv ~/.config/nvim ~/.config/nvim_backup
 2. Clone or copy this repo into your Neovim config path:
-```git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim```
+```git clone https://github.com/Alexdhami/nvim-config.git ~/.config/nvim```
 
 3. Launch Neovim:
 ```nvim```
