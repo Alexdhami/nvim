@@ -47,3 +47,4 @@ require("plugins.cmp")
 require("plugins.autopairs")
 require("plugins.gitsigns")
 require("plugins.harpoon")
+
