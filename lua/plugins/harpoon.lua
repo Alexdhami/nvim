@@ -1,7 +1,9 @@
--- Quick file navigation plugin by ThePrimeagen
+-- plugins/harpoon.lua
 
--- ~/.config/nvim/lua/plugins/harpoon.lua
+return {
+  "ThePrimeagen/harpoon",
+  config = function()
+    require("harpoon").setup()
+  end,
+}
 
-local harpoon = require("harpoon")
-
-harpoon.setup()

@@ -1,3 +1,4 @@
+-- plugins/telescope.lua
 
 return {
   "nvim-telescope/telescope.nvim",
@@ -11,5 +12,5 @@ return {
     vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
     vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers" })
     vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })
-  end
+  end,
 }

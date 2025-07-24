@@ -1,13 +1,17 @@
--- Mason plugin for managing LSP installations
+-- plugins/mason.lua
 
--- Load the required modules first
-local mason = require("mason")
-local mason_lspconfig = require("mason-lspconfig")
+return {
+  "williamboman/mason.nvim",
+  build = ":MasonUpdate",
+  dependencies = { "williamboman/mason-lspconfig.nvim" },
+  config = function()
+    local mason = require("mason")
+    local mason_lspconfig = require("mason-lspconfig")
 
--- Setup mason
-mason.setup()
+    mason.setup()
 
--- Setup mason-lspconfig and ensure specific LSPs are installed
-mason_lspconfig.setup({
-  ensure_installed = { "pyright", "lua_ls" },
-})
+    mason_lspconfig.setup({
+      ensure_installed = { "pyright", "lua_ls" }, -- Ensure Pyright and Lua LS are installed
+    })
+  end,
+}

@@ -1,6 +1,8 @@
+-- plugins/gitsigns.lua
 
--- Git integration signs in the gutter
-
-require("gitsigns").setup()
-
-
+return {
+  "lewis6991/gitsigns.nvim",
+  config = function()
+    require("gitsigns").setup()
+  end,
+}
