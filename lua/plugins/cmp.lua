@@ -6,6 +6,7 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     "saadparwaiz1/cmp_luasnip",
     "L3MON4D3/LuaSnip",
+    "hrsh7th/cmp-nvim-lsp-signature-help",
     "windwp/nvim-autopairs",
     "onsails/lspkind.nvim",
   },
@@ -46,6 +47,7 @@ return {
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "luasnip" },
+        { name = "nvim_lsp_signature_help" },
         { name = "buffer" },
         { name = "path" },
       }),
