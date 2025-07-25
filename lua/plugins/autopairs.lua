@@ -1,19 +1,27 @@
---- autopairs.lua
+-- plugins/autopairs.lua
 
--- Ensure the plugin is installed using lazy.nvim
 return {
-  "windwp/nvim-autopairs",  -- Plugin name
+  "windwp/nvim-autopairs",
+  event = "InsertEnter",
+  dependencies = { "hrsh7th/nvim-cmp" }, -- ensure cmp is available
   config = function()
-    -- Set up basic autopair functionality
-    require("nvim-autopairs").setup({
-      check_ts = true,   -- Enable treesitter support for better context
+    local npairs = require("nvim-autopairs")
+
+    npairs.setup({
+      check_ts = true,
       fast_wrap = {
-        map = "<M-e>",   -- Alt+e for fast wrapping
-        chars = {"(", "[", "{", '"', "'", "`"},  -- The wrap characters
+        map = "<M-e>",
+        chars = { "(", "[", "{", '"', "'", "`" },
         pattern = string.gsub("[%'%'%[%]%(%)%{%}]", "%s", ""),
-        offset = 0,  -- Offset from the cursor for the wrap
+        offset = 0,
       },
     })
+
+    -- 👇 Integrate with nvim-cmp
+    local cmp_status, cmp = pcall(require, "cmp")
+    if cmp_status then
+      local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+      cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+    end
   end,
 }
-
