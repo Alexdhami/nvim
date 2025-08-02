@@ -1,4 +1,3 @@
-
 -- Custom key mappings
 
 local map = vim.keymap.set
@@ -10,7 +9,8 @@ map("i", "kk", "<Esc>", opts)
 
 -- Delete previous word with Ctrl+Backspace
 map("i", "<C-BS>", "<C-W>", opts)
-
+map("n", "<space><space>", "zo", opts)
+map("n", "<space><CR>", "za", opts)
 -- Search and replace with Ctrl+F
 map("i", "<C-F>", "<Esc>:%s///g<Left><Left><Left>", opts)
 
@@ -29,4 +29,3 @@ map("n", "<A-h>", "<C-w>h", opts)
 map("n", "<A-l>", "<C-w>l", opts)
 map("n", "<A-j>", "<C-w>j", opts)
 map("n", "<A-k>", "<C-w>k", opts)
-
