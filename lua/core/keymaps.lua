@@ -6,7 +6,7 @@ local opts = { noremap = true, silent = true }
 -- Insert mode: Exit insert with 'jj' or 'kk'
 map("i", "jj", "<Esc>", opts)
 map("i", "kk", "<Esc>", opts)
-
+map("n", "jk", ":noh<CR>")
 -- Delete previous word with Ctrl+Backspace
 map("i", "<C-BS>", "<C-W>", opts)
 map("n", "<space><space>", "zo", opts)
