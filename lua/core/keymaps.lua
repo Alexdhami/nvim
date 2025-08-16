@@ -6,13 +6,12 @@ local opts = { noremap = true, silent = true }
 -- Insert mode: Exit insert with 'jj' or 'kk'
 map("i", "jj", "<Esc>", opts)
 map("i", "kk", "<Esc>", opts)
-map("n", "jk", ":noh<CR>")
+map("n", "<space><space>", ":noh<CR>")
 -- Delete previous word with Ctrl+Backspace
 map("i", "<C-BS>", "<C-W>", opts)
-map("n", "<space><space>", "zo", opts)
 map("n", "<space><CR>", "za", opts)
 -- Search and replace with Ctrl+F
-map("i", "<C-F>", "<Esc>:%s///g<Left><Left><Left>", opts)
+map("n", "ff", "<Esc>:%s///g<Left><Left><Left>", opts)
 
 -- Save and run Python file with Ctrl+Enter
 map("n", "<C-CR>", ":w<CR>:!python3 %<CR>", opts)
