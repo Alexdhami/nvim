@@ -1,5 +1,22 @@
 -------- Setting comment Uncomment --------
 
+--set leader to space
+vim.g.mapleader = " "
+
+-- nvim file System on space n
+vim.keymap.set("n","<leader>n",vim.cmd.Ex)
+
+-- Map leader+h/l to move between windows
+vim.keymap.set('n', '<leader>h', '<C-w>h')
+vim.keymap.set('n', '<leader>l', '<C-w>l')
+vim.keymap.set('n', '<leader>k', '<C-w>k')
+vim.keymap.set('n', '<leader>j', '<C-w>j')
+
+-- move selected text line up down in line
+vim.keymap.set("v","J",":m '>+1<CR>gv=gv")
+vim.keymap.set("v","K",":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n","J","mzJ`z")
 
 
 -- For single-window search (local jump)
@@ -10,7 +27,7 @@ vim.keymap.set('n', 'S', '<Plug>(leap-from-window)', { desc = 'Leap Multi-Window
 
 -- Visual mode: ,c
 vim.keymap.set('v', ',c', ':Commentary<CR>', { noremap = true, silent = true })
- 
+
 
 
 -- Normal mode: ,cc
