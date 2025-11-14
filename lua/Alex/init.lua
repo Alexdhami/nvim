@@ -1,3 +1,5 @@
-require("Alex/packer")
-require("Alex/set")
-require("Alex/keymaps")
+require("Alex.set")
+require("Alex.keymaps")
+
+-- Now Lazy works
+require("lazy").setup(require("Alex.lazy"))
