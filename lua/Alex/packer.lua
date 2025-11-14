@@ -4,46 +4,50 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
-	
-    ---- Themes
-	-- rose pine theme
-    use { "scottmckendry/cyberdream.nvim" }
-	use {
-		"rose-pine/neovim",
-		name = "rose-pine",
-		config = function()
-			vim.cmd("colorscheme rose-pine")
-		end
-	}
-	-- Telescope fuzzy finder
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = { {'nvim-lua/plenary.nvim'} } -- dependency
-	}
 
-	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
-	use("theprimeagen/harpoon")
-	use("mbbill/undotree")
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+
+    ---- Themes
+    -- rose pine theme
+    use { "scottmckendry/cyberdream.nvim" }
+
+    use {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            vim.cmd("colorscheme rose-pine")
+        end
+    }
+
+    -- Telescope fuzzy finder
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} } -- dependency
+    }
+
+    use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
+
+    use("theprimeagen/harpoon")
+
+    use("mbbill/undotree")
 
     -- lsp configuration
-	use{
-		'VonHeikemen/lsp-zero.nvim',
-		requires = {
-			-- LSP support
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
+    use{
+        'VonHeikemen/lsp-zero.nvim',
+        requires = {
+            -- LSP support
+            {'neovim/nvim-lspconfig'},
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
 
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-nvim-lua'},
-			{'saadparwaiz1/cmp_luasnip'},
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-nvim-lua'},
+            {'saadparwaiz1/cmp_luasnip'},
 
             --Snippet
             {'L3MON4D3/LuaSnip'},
@@ -71,4 +75,4 @@ return require('packer').startup(function(use)
         end,
     }
 
-  end)
+end)
