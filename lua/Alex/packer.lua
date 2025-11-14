@@ -8,13 +8,9 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 	
-	-- Telescope fuzzy finder
-	use {
-		'nvim-telescope/telescope.nvim',
-		requires = { {'nvim-lua/plenary.nvim'} } -- dependency
-	}
-
+    ---- Themes
 	-- rose pine theme
+    use { "scottmckendry/cyberdream.nvim" }
 	use {
 		"rose-pine/neovim",
 		name = "rose-pine",
@@ -22,6 +18,12 @@ return require('packer').startup(function(use)
 			vim.cmd("colorscheme rose-pine")
 		end
 	}
+	-- Telescope fuzzy finder
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = { {'nvim-lua/plenary.nvim'} } -- dependency
+	}
+
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
 	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
