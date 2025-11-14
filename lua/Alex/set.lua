@@ -4,6 +4,9 @@ vim.o.foldlevel = 99
 vim.o.foldenable = true
 
 
+-- clipboard support outside nvim and vise versa
+vim.o.clipboard = "unnamedplus"
+
 -------- Make line numbers default -------
 vim.o.number = true
 vim.o.relativenumber = true
@@ -15,3 +18,9 @@ vim.opt.softtabstop = 4 -- Number of spaces a <Tab> counts for while editing
 vim.opt.expandtab = true -- Convert tabs to spaces
 
 
+-- highlight off when you search using /text
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+
+vim.opt.scrolloff = 14
