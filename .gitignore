@@ -1,0 +1,9 @@
+# Packer compiled file (optional)
+plugin/packer_compiled.lua
+
+# Swap, undo, backup
+*.swp
+*.swo
+*.un~ 
+*.bak
+
