@@ -1,9 +1,35 @@
-# Packer compiled file (optional)
-plugin/packer_compiled.lua
-
-# Swap, undo, backup
+# Neovim swap / backup / undo files
 *.swp
 *.swo
-*.un~ 
+*.un~
+*.swn
+*.tmp
 *.bak
 
+# Neovim session files
+Session.vim
+
+# Lazy.nvim installed plugins
+# Lazy installs plugins here by default:
+# ~/.local/share/nvim/lazy/
+local/share/nvim/lazy/*
+
+# Packer installed plugins (if you ever used it)
+packer_compiled.lua
+site/pack/packer/*
+
+# Compiled lua files
+*.luac
+
+# Node modules (if you use Treesitter or other JS tooling)
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
