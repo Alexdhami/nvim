@@ -19,23 +19,10 @@ vim.keymap.set("v","K",":m '<-2<CR>gv=gv")
 vim.keymap.set("n","J","mzJ`z")
 
 
--- For single-window search (local jump)
-vim.keymap.set({'n', 'x', 'o'}, 's', '<Plug>(leap)', { desc = 'Leap Search (Window)' })
-
--- For multi-window search (global jump)
-vim.keymap.set('n', 'S', '<Plug>(leap-from-window)', { desc = 'Leap Multi-Window Jump' })
-
--- Visual mode: ,c
-vim.keymap.set('v', ',c', ':Commentary<CR>', { noremap = true, silent = true })
 
 
 
--- Normal mode: ,cc
-vim.keymap.set('n', ',c', ':Commentary<CR>', { noremap = true, silent = true })
-
-
-
--------- Save and run Python file with Ctrl+Enter ------
+-------- Save and run programming files with Ctrl+Enter ------
 vim.keymap.set('n', '<C-CR>', function()
   local filetype = vim.bo.filetype
   vim.cmd('w') -- save file before running
