@@ -1,15 +1,34 @@
 return {
 
-    -- Themes
-    { "scottmckendry/cyberdream.nvim" },
-
+    -- commentary plugin for commenting [,c]
     {
-        "rose-pine/neovim",
-        name = "rose-pine",
+        "tpope/vim-commentary",
+        lazy = false,
         config = function()
-            vim.cmd("colorscheme rose-pine")
+            -- Visual mode ,c
+            vim.keymap.set('v', ',c', '<Plug>Commentary', { noremap = false, silent = true })
+            -- Normal mode ,c
+            vim.keymap.set('n', ',c', '<Plug>Commentary', { noremap = false, silent = true })
+        end
+    },
+
+    -- Leap
+    {
+        "ggandor/leap.nvim",
+        config = function()
+            require("leap").setup({
+                labels = "sdjfkl",
+            })
+            -- Custom keymap
+            vim.keymap.set(
+                { "n", "x", "o" },
+                "s",
+                "<Plug>(leap)",
+                { desc = "Leap Search (Window)" }
+            )
         end,
     },
+
 
     -- Telescope
     {
@@ -52,15 +71,6 @@ return {
         },
     },
 
-    -- Leap
-    {
-        "ggandor/leap.nvim",
-        config = function()
-            require("leap").setup({
-                labels = "sdjfkl",
-            })
-        end,
-    },
 
     -- Mini pairs
     {
@@ -69,4 +79,16 @@ return {
             require("mini.pairs").setup()
         end,
     },
+
+    -- Themes 
+    { "scottmckendry/cyberdream.nvim" },
+
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            vim.cmd("colorscheme rose-pine")
+        end,
+    },
+
 }
