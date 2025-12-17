@@ -3,6 +3,11 @@
 --set leader to space
 vim.g.mapleader = " "
 
+-- set {} don't open folds
+
+vim.keymap.set("n","{","{",{noremap = true, silent = true})
+vim.keymap.set("n","}","}",{noremap = true, silent = true})
+
 -- nvim file System on space n
 vim.keymap.set("n","<leader>n",vim.cmd.Ex)
 
@@ -33,7 +38,7 @@ vim.keymap.set('n', '<C-CR>', function()
   elseif filetype == 'c' then
     vim.cmd('!gcc % -o %:r && echo "" && ./%:r')
   elseif filetype == 'cpp' then
-    vim.cmd('!g++ % -o %:r && echo "" && ./%:r')
+    vim.cmd('!g++ -std=c++20 % -o %:r && echo "" && ./%:r')
   elseif filetype == 'java' then
     vim.cmd('!javac % && java %:r')
   elseif filetype == 'ruby' then
