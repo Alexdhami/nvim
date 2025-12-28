@@ -1,4 +1,5 @@
 -- This makes Neovim recognize indentation blocks as foldable regions — functions, ifs, loops, etc.
+vim.g.mapleader = " "
 vim.o.foldmethod = "indent"
 vim.o.foldlevel = 99
 vim.o.foldenable = true
