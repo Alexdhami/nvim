@@ -1,5 +1,17 @@
 -------- Setting comment Uncomment --------
 
+-- Error diagnostic mapping
+vim.keymap.set("n", "<leader>e", function()
+  vim.diagnostic.open_float()
+end, { desc = "Show diagnostic" })
+
+vim.keymap.set("n", "<leader>je", function()
+  vim.diagnostic.goto_next()
+end, { desc = "Next diagnostic" })
+
+vim.keymap.set("n", "<leader>ke", function()
+  vim.diagnostic.goto_prev()
+end, { desc = "Prev diagnostic" })
 --set leader to space
 vim.g.mapleader = " "
 
@@ -24,7 +36,28 @@ vim.keymap.set("v","K",":m '<-2<CR>gv=gv")
 vim.keymap.set("n","J","mzJ`z")
 
 
+--------  Search and replace with Ctrl+F --------
+vim.keymap.set('n', 'ff', '<Esc>:%s///g<Left><Left><Left>')
 
+
+-------- set jj,jk,kj and kk to esc the insert mode --------
+vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('i', 'jl', '<Esc>')
+vim.keymap.set('i', 'kk', '<Esc>')
+vim.keymap.set('i', 'kl', '<Esc>')
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('i', 'kj', '<Esc>')
+vim.keymap.set('i', 'kh', '<Esc>')
+vim.keymap.set('i', 'jh', '<Esc>')
+
+
+---------- Delete previous word with Ctrl+Backspace ---------
+vim.keymap.set('i', '<C-BS>', '<C-W>')
+
+
+
+-- Space + Enter = toggle fold under cursor
+vim.keymap.set('n', '<Space><CR>', 'za', { noremap = true, silent = true })
 
 
 -------- Save and run programming files with Ctrl+Enter ------
@@ -52,26 +85,3 @@ vim.keymap.set('n', '<C-CR>', function()
     print('No run command defined for filetype: ' .. filetype)
   end
 end)
-
-
---------  Search and replace with Ctrl+F --------
-vim.keymap.set('n', 'ff', '<Esc>:%s///g<Left><Left><Left>')
-
-
-
--------- set jj,jk,kj and kk to esc the insert mode --------
-vim.keymap.set('i', 'jj', '<Esc>')
-vim.keymap.set('i', 'kk', '<Esc>')
-vim.keymap.set('i','jk','<Esc>')
-vim.keymap.set('i','kj','<Esc>')
-
-
----------- Delete previous word with Ctrl+Backspace ---------
-vim.keymap.set('i', '<C-BS>', '<C-W>')
-
-
-
--- Space + Enter = toggle fold under cursor
-vim.keymap.set('n', '<Space><CR>', 'za', { noremap = true, silent = true })
-
-
