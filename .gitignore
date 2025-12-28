@@ -5,6 +5,7 @@
 *.swn
 *.tmp
 *.bak
+lazy-lock.json
 
 # Neovim session files
 Session.vim
