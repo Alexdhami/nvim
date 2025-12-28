@@ -1,17 +1,12 @@
 return {
-
-    -- commentary plugin for commenting [,c]
+    -- Comment.nvim plugin for commenting 
     {
-        "tpope/vim-commentary",
-        lazy = false,
-        config = function()
-            -- Visual mode ,c
-            vim.keymap.set('v', ',c', '<Plug>Commentary', { noremap = false, silent = true })
-            -- Normal mode ,c
-            vim.keymap.set('n', ',c', '<Plug>Commentary', { noremap = false, silent = true })
-        end
-    },
-
+      "numToStr/Comment.nvim",
+      config = function()
+        require("Comment").setup()
+      end
+    }
+,
     -- Leap
     {
         "ggandor/leap.nvim",
