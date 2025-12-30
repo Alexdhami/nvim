@@ -7,4 +7,4 @@ function ThemeIt(color)
 
 end
 
-ThemeIt("cyberdream")
+ThemeIt("rose-pine")
