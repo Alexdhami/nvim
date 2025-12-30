@@ -69,18 +69,17 @@ vim.keymap.set('n', '<C-CR>', function()
   elseif filetype == 'javascript' then
     vim.cmd('!echo "" && node %')
   elseif filetype == 'c' then
-      vim.cmd('!gcc % -o %:r && echo "" && ./%:r')
+      vim.cmd('!echo "" && gcc % -o %:r && ./%:r')
   elseif filetype == 'cpp' then
-      vim.cmd('!g++ -std=c++20 % -o %:r && echo "" && ./%:r')
+      vim.cmd('!echo "" && g++ -std=c++20 % -o %:r && ./%:r')
   elseif filetype == 'asm' or filetype == 's' then
-      vim.cmd('!nasm -f elf64 % -o %:r.o && ld %:r.o -o %:r && echo "" && ./%:r')
+      vim.cmd('!echo "" && nasm -f elf64 % -o %:r.o && ld %:r.o -o %:r && ./%:r')
   elseif filetype == 'java' then
-      vim.cmd('!javac % && java %:r')
+      vim.cmd('!echo "" && javac % && java %:r')
   elseif filetype == 'ruby' then
-    vim.cmd('!ruby %')
-
+    vim.cmd('!echo "" && ruby %')
   elseif filetype == 'go' then
-    vim.cmd('!go run %')
+    vim.cmd('!echo "" && go run %')
   else
     print('No run command defined for filetype: ' .. filetype)
   end
