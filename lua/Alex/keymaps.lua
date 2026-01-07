@@ -69,9 +69,9 @@ vim.keymap.set('n', '<C-CR>', function()
   elseif filetype == 'javascript' then
     vim.cmd('!echo "" && node %')
   elseif filetype == 'c' then
-      vim.cmd('!echo "" && gcc % -o %:r && ./%:r')
+      vim.cmd('!echo "" && echo "" && gcc % && ./a.out')
   elseif filetype == 'cpp' then
-      vim.cmd('!echo "" && g++ -std=c++20 % -o %:r && ./%:r')
+      vim.cmd('!echo "" && echo "" && g++ -std=c++20 % && ./a.out')
   elseif filetype == 'asm' or filetype == 's' then
       vim.cmd('!echo "" && nasm -f elf64 % -o %:r.o && ld %:r.o -o %:r && ./%:r')
   elseif filetype == 'java' then
