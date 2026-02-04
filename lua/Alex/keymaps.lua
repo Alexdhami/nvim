@@ -43,11 +43,7 @@ vim.keymap.set('n', 'ff', '<Esc>:%s///g<Left><Left><Left>')
 -------- set jj,jk,kj and kk to esc the insert mode --------
 vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('i', 'jl', '<Esc>')
-vim.keymap.set('i', 'kk', '<Esc>')
-vim.keymap.set('i', 'kl', '<Esc>')
 vim.keymap.set('i', 'jk', '<Esc>')
-vim.keymap.set('i', 'kj', '<Esc>')
-vim.keymap.set('i', 'kh', '<Esc>')
 vim.keymap.set('i', 'jh', '<Esc>')
 
 
