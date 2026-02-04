@@ -7,6 +7,7 @@ return {
       end
     }
 ,
+    { 'brianhuster/live-preview.nvim' },
     -- Leap
     {
         "ggandor/leap.nvim",
