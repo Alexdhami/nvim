@@ -84,9 +84,14 @@ return {
         end,
     },
 
-    -- Themes 
+    ------------ Themes ------------------
+    {"catppuccin/nvim"},
+    {"EdenEast/nightfox.nvim"},
+    {"navarasu/onedark.nvim"},
+    {"sainnhe/gruvbox-material"},
+    {"rebelot/kanagawa.nvim"},
+    {"folke/tokyonight.nvim"},
     { "scottmckendry/cyberdream.nvim" },
-
     {
         "rose-pine/neovim",
         name = "rose-pine",
