@@ -1,5 +1,8 @@
 -------- Setting comment Uncomment --------
 
+-- reserve yanked statement after pasting too --
+vim.keymap.set("x", "p", '"_dP')
+
 -- Error diagnostic mapping
 vim.keymap.set("n", "<leader>e", function()
   vim.diagnostic.open_float()
