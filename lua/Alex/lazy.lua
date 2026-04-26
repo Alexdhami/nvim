@@ -15,15 +15,19 @@ return {
         ---@type render.md.UserConfig
         opts = {},
     },
+
+    -- live-review for html pages.
     { 'brianhuster/live-preview.nvim' },
+
     -- Leap
     {
-        "ggandor/leap.nvim",
+        url = "https://codeberg.org/andyg/leap.nvim",
+        name = "leap.nvim", -- optional but recommended
         config = function()
             require("leap").setup({
                 labels = "sdjfkl",
             })
-            -- Custom keymap
+
             vim.keymap.set(
                 { "n", "x", "o" },
                 "s",
@@ -32,7 +36,6 @@ return {
             )
         end,
     },
-
 
     -- Telescope
     {
