@@ -7,7 +7,8 @@ function ChangeTheme(color)
 
 end
 
-ChangeTheme("kanagawa")
+
+ChangeTheme("cyberdream")
 
 -----------------    Available Themes    ----------------------
 
@@ -19,3 +20,4 @@ ChangeTheme("kanagawa")
 -- 6 -> onedark
 -- 7 -> gruvbox-material
 -- 8 -> kanagawa
+-- 9 -> poimandres 
