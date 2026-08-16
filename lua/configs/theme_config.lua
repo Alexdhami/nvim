@@ -9,13 +9,13 @@ end
 
 ChangeTheme("kanagawa")
 
- -----------------    Available Themes    ----------------------
+-----------------    Available Themes    ----------------------
 
- -- 1 -> cyberdream
- -- 2 -> rose-pine
- -- 3 -> tokyonight
- -- 4 -> catppuccin
- -- 5 -> nightfox
- -- 6 -> onedark
- -- 7 -> gruvbox-material
- -- 8 -> kanagawa
+-- 1 -> cyberdream
+-- 2 -> rose-pine
+-- 3 -> tokyonight
+-- 4 -> catppuccin
+-- 5 -> nightfox
+-- 6 -> onedark
+-- 7 -> gruvbox-material
+-- 8 -> kanagawa
