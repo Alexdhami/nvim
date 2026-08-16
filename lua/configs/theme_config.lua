@@ -2,11 +2,12 @@ function ChangeTheme(color)
     color = color or "cyberdream"
     vim.cmd.colorscheme(color)
 
-    vim.api.nvim_set_hl(0,"Normal",{bg = "none"})
-    vim.api.nvim_set_hl(0,"NormalFloat",{bg = "none"})
-
+    -- Modern, clean colors for the completion popup
+    vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e2e", fg = "#cdd6f4" })
+    vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#fff3ff", fg = "#130a3a", bold = true })
+    vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#89b4fa" })
+    
 end
-
 
 ChangeTheme("cyberdream")
 
