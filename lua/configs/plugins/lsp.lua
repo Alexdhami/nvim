@@ -1,4 +1,4 @@
--- lua/configs/plugin/plugin-specs/lsp.lua
+-- lua/configs/plugin/lsp.lua
 return {
     {
         "VonHeikemen/lsp-zero.nvim",
