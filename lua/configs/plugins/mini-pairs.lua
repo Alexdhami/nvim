@@ -1,7 +1,6 @@
--- Mini pairs
+-- lsp/configs/plugins/mini-pairs
 return
 {
-
     "nvim-mini/mini.pairs",
     config = function()
         require("mini.pairs").setup()
