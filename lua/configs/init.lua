@@ -1,9 +1,9 @@
+-- lua/configs/init.lua
+
 require("configs.keymaps")
 require("configs.options")
-require("configs.plugins.lsp")
+
+-- This ONE line loads lazy.nvim, which automatically reads every file in configs/plugins/
 require("configs.lazy-loader")
+
 require("configs.theme_config")
-require("configs.plugins.colorschemes")
-require("configs.plugins.telescope")
-require("configs.plugins.leap-nvim")
-require("configs.plugins.mini-pairs")
