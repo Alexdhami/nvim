@@ -1,11 +1,11 @@
--- This makes Neovim recognize indentation blocks as foldable regions — functions, ifs, loops, etc.
+--- This makes Neovim recognize indentation blocks as foldable regions — functions, ifs, loops, etc.
 vim.g.mapleader = " "
 vim.o.foldmethod = "indent"
 vim.o.foldlevel = 99
 vim.o.foldenable = true
 
 
--- clipboard support outside nvim and vise versa
+---- clipboard support outside nvim and vise versa
 vim.o.clipboard = "unnamedplus"
 
 -------- Make line numbers default -------
@@ -19,9 +19,9 @@ vim.opt.softtabstop = 4 -- Number of spaces a <Tab> counts for while editing
 vim.opt.expandtab = true -- Convert tabs to spaces
 
 
--- highlight off when you search using /text
+--- highlight off when you search using /text
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
--- minimum number of screen lines to keep visible above and below the cursor while scrolling.
+--- minimum number of screen lines to keep visible above and below the cursor while scrolling.
 vim.opt.scrolloff = 14
