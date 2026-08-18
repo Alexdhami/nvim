@@ -1,4 +1,7 @@
 -- lua/configs/plugins/treesitter.lua
+
+-- Usecase --> syntax highlighting, code parsing, and smart indentation.
+
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",

@@ -1,3 +1,7 @@
+-- lua/configs/theme_config.lua
+
+-- Function to change themes.
+
 function ChangeTheme(color)
     color = color or "cyberdream"
     vim.cmd.colorscheme(color)

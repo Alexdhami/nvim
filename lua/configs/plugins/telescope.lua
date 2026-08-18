@@ -1,4 +1,6 @@
--- lua/configs/plugins/telescope
+-- lua/configs/plugins/telescope.lua
+
+-- Usecase --> fuzzy finding, file search, and live text search.
 
 return {
     {

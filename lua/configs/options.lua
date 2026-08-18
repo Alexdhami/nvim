@@ -1,3 +1,7 @@
+-- lua/configs/options.lua
+
+-- Usecases --> nvovim's text editor settings
+
 --- This makes Neovim recognize indentation blocks as foldable regions — functions, ifs, loops, etc.
 vim.g.mapleader = " "
 vim.o.foldmethod = "indent"

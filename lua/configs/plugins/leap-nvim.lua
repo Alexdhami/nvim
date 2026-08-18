@@ -1,4 +1,7 @@
--- lua/plugins/leap-nvim.lua
+-- lua/configs/plugins/leap-nvim.lua
+
+-- Usecase --> fast cursor navigation / jump to visible text.
+
 return {
     url = "https://codeberg.org/andyg/leap.nvim",
     name = "leap.nvim", -- optional but recommended
