@@ -1,4 +1,6 @@
--- lua/configs/plugin/lsp.lua
+-- lua/configs/plugins/lsp.lua
+
+-- Usecase --> LSP support for code intelligence and diagnostics. (pyright, clangd, etc.. come from here)
 
 return {
     {

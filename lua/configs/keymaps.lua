@@ -1,4 +1,6 @@
--------- Setting comment Uncomment --------
+-- lua/configs/keymaps.lua
+
+-- Usecase --> keymaps go here
 
 -- Set leader key to space
 vim.g.mapleader = " "

@@ -1,4 +1,7 @@
--- lsp/configs/plugins/mini-pairs
+-- lsp/configs/plugins/mini-pairs.lua
+
+-- Usecase --> auto pairs when entering opening side.
+
 return
 {
     "nvim-mini/mini.pairs",

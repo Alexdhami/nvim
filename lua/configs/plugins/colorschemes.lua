@@ -1,4 +1,7 @@
--- lua/plugins/colorscheme.lua
+-- lua/configs/plugins/colorscheme.lua
+
+-- neovim themes go here.
+
 return {
     {
         "rose-pine/neovim",

@@ -1,5 +1,7 @@
 -- lua/configs/init.lua
 
+-- import modiules inside configs forder via require() function
+
 require("configs.keymaps")
 require("configs.options")
 

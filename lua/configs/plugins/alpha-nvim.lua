@@ -1,4 +1,4 @@
--- lua/configs/plugins/alpha-nvim
+-- lua/configs/plugins/alpha-nvim.lua
 
 -- Usecase --> nvim dashboard decoration.
 

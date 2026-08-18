@@ -1,4 +1,7 @@
+--  lua/configs/lazy-loader.lua
+
 --  Define where lazy.nvim should be saved on your filesystem
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 --  Auto-install lazy.nvim if it doesn't exist

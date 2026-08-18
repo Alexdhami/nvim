@@ -1,5 +1,7 @@
--- lua/configs/plugins/lualine-nvim
--- Bottom row (status bar) in nvim.
+-- lua/configs/plugins/lualine-nvim.lua
+
+-- Usecase -->Shows bottom row (status bar) in nvim.
+
 return {
   'nvim-lualine/lualine.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },

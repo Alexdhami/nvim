@@ -1,4 +1,7 @@
--- lua/configs/plugins/nvim-tree
+-- lua/configs/plugins/nvim-tree.lua
+
+-- Usecase --> shows file manager.
+
 return{
     "nvim-tree/nvim-tree.lua", 
     dependencies = {"nvim-tree/nvim-web-devicons"},
