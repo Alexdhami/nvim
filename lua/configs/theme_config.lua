@@ -12,10 +12,10 @@ function ChangeTheme(color)
     vim.api.nvim_set_hl(0, "FloatBorder", {fg = "#036666" })
 
     -- Hover window content (text & background)
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1e1e2e", fg = "#cdd6f4" })
+    vim.api.nvim_set_hl(0, "NormalFloat", {bg = "NONE"})
 
     -- Hover window border frame
-    vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#1e1e2e", fg = "#89b4fa" })
+    vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE", fg = "#89b4fa" })
 end
 
 ChangeTheme("cyberdream")
