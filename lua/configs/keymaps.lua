@@ -22,7 +22,7 @@ end, { noremap = true, silent = true, desc = 'Go to specific tab' })
 -- reserve yanked statement after pasting too --
 vim.keymap.set("x", "p", '"_dP')
 
---              Error diagnostic mapping
+-- Error diagnostic mapping
 vim.keymap.set("n", "<leader>e", function()
     vim.diagnostic.open_float()
 end, { desc = "Show diagnostic" })
@@ -76,6 +76,9 @@ vim.keymap.set('i', '<C-BS>', '<C-W>')
 -- Space + Enter = toggle fold under cursor
 vim.keymap.set('n', '<Space><CR>', 'za', { noremap = true, silent = true })
 
+-- 
+vim.keymap.set('n', '<leader><BS>', '<Esc>:wq<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader><leader><BS>', '<Esc>:q<CR>', { noremap = true, silent = true })
 
 -------- Save and run programming files with Ctrl+Enter ------
 vim.keymap.set('n', '<C-CR>', function()
