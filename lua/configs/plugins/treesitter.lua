@@ -8,7 +8,7 @@ return {
     config = function()
         -- Direct setup call for modern releases
         require("nvim-treesitter").setup({
-            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "python" },
+            ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "python", "asm" },
             auto_install = true,
             highlight = { enable = true },
             indent = { enable = true },
