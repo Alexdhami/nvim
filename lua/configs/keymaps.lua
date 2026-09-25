@@ -100,6 +100,8 @@ vim.keymap.set('n', '<C-CR>', function()
         vim.cmd('!echo "" && ruby %')
     elseif filetype == 'go' then
         vim.cmd('!echo "" && go run %')
+    elseif filetype == "lua" then
+        vim.cmd("!echo  && lua %")
     else
         print('No run command defined for filetype: ' .. filetype)
     end
